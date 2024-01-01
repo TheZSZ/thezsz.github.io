@@ -353,7 +353,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <div style={textContainerStyles}>
 
         <h1 style={headingStyles}>
-          Hey👋🏽, I'm Z and I do a Software Engineering. I focus on{" "}
+          Hey👋🏽, I'm Z and I do Software Engineering. I focus on{" "}
           <br />
           <span style={headingAccentStyles}>— Blockchain Tech 📦⛓️🌐</span>
           <br />
