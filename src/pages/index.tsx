@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import type { HeadFC, PageProps } from "gatsby"
 import resume from "./resume.pdf"
+import global_stellar_poster from "./Global_Stellar_CBDC_Consensus_Poster.pdf"
+import oracle_cbdc_poster from "./Oracle_CBDC_Poster.pdf"
 
 const buttonContainerStyles: React.CSSProperties = {
   display: 'flex',
@@ -221,7 +223,8 @@ const projects = [
   },
   {
     text: "Capstone: Adapting Project Hamilton OpenCBDC to Leverage Oracle Blockchain Tables",
-    url: "https://github.com/zek224/oracle-port-opencbdc-tx",
+    url: oracle_cbdc_poster,
+    // url: "https://github.com/zek224/oracle-port-opencbdc-tx",
     // description:
       // "An Oracle sponsored capstone project aimed at adapting the OpenCBDC project by the MIT Digital Currency Initiative and the Boston Federal Reserve to leverage Oracle Blockchain Tables. Spent a year researching and developing a system that connected OpenCBDC to Oracle's services and created a frontend to interact with the system.",
       descriptionHtml: () => (
@@ -233,7 +236,8 @@ const projects = [
   },
   {
     text: "Research: Stellar CBDC Hierarchical Consensus",
-    url: "https://stellar.org/",
+    url: global_stellar_poster,
+    // url: "https://stellar.org/",
     // description:  
       // "Doing research in Lehigh's Blockchain Labs on using Stellar to create a hierarchical consensus to model a global cross-CBDC payment solution. Currently employing Soroban Smart Contracts to create a proof of concept.",
     descriptionHtml: () => (
