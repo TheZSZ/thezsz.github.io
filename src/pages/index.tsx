@@ -10,6 +10,7 @@ const buttonContainerStyles: React.CSSProperties = {
   display: 'flex',
   justifyContent: 'flex-end', // Align button to the right
   flex: '0 0 auto', // Do not grow or shrink
+  marginTop: '20px', // Add space above the button
 };
 
 const textContainerStyles: React.CSSProperties = {
@@ -213,38 +214,38 @@ const projects = [
     url: "https://devpost.com/software/civicseed",
     // https://github.com/zek224/Civic-Seed
     // description:
-      // "An Amazon and Lutron sponsored hackathon at Lehigh University and Lafayette College that focused on uniting the Lehigh Valley. The purpose of CivicSeed is to facilitate community-driven projects by providing a space for residents, local businesses, and municipal representatives to collaborate in the Lehigh Valley.",
-      descriptionHtml: () => (
-        <span>
-          An <a href="https://www.amazon.com/" style={greenLinkStyle} target="_blank" rel="noopener noreferrer">Amazon</a> and <a href="https://www.lutron.com/" style={greenLinkStyle} target="_blank" rel="noopener noreferrer">Lutron</a> sponsored hackathon <a href="https://leh-laf-2023.devpost.com/" style={greenLinkStyle} target="_blank" rel="noopener noreferrer">"Le-Laf Hackathon"</a> at Lehigh University and Lafayette College that focused on uniting the Lehigh Valley. The purpose of CivicSeed is to facilitate community-driven projects by providing a space for residents, local businesses, and municipal representatives to collaborate in the Lehigh Valley.",
-        </span>
-      ),      
-      color: "green",
+    // "An Amazon and Lutron sponsored hackathon at Lehigh University and Lafayette College that focused on uniting the Lehigh Valley. The purpose of CivicSeed is to facilitate community-driven projects by providing a space for residents, local businesses, and municipal representatives to collaborate in the Lehigh Valley.",
+    descriptionHtml: () => (
+      <span>
+        An <a href="https://www.amazon.com/" style={greenLinkStyle} target="_blank" rel="noopener noreferrer">Amazon</a> and <a href="https://www.lutron.com/" style={greenLinkStyle} target="_blank" rel="noopener noreferrer">Lutron</a> sponsored hackathon <a href="https://leh-laf-2023.devpost.com/" style={greenLinkStyle} target="_blank" rel="noopener noreferrer">"Le-Laf Hackathon"</a> at Lehigh University and Lafayette College that focused on uniting the Lehigh Valley. The purpose of CivicSeed is to facilitate community-driven projects by providing a space for residents, local businesses, and municipal representatives to collaborate in the Lehigh Valley.",
+      </span>
+    ),
+    color: "green",
   },
   {
     text: "Capstone: Adapting Project Hamilton OpenCBDC to Leverage Oracle Blockchain Tables",
     url: oracle_cbdc_poster,
     // url: "https://github.com/zek224/oracle-port-opencbdc-tx",
     // description:
-      // "An Oracle sponsored capstone project aimed at adapting the OpenCBDC project by the MIT Digital Currency Initiative and the Boston Federal Reserve to leverage Oracle Blockchain Tables. Spent a year researching and developing a system that connected OpenCBDC to Oracle's services and created a frontend to interact with the system.",
-      descriptionHtml: () => (
-        <span>
-          An <a href="https://www.oracle.com/" style={redLinkStyle} target="_blank" rel="noopener noreferrer">Oracle</a> sponsored capstone project aimed at adapting the <a href="https://dci.mit.edu/project-hamilton-building-a-hypothetical-cbdc" style={redLinkStyle} target="_blank" rel="noopener noreferrer">OpenCBDC project</a> by the <a href="https://dci.mit.edu/" style={redLinkStyle} target="_blank" rel="noopener noreferrer">MIT Digital Currency Initiative</a> and the <a href="https://www.bostonfed.org/" style={redLinkStyle} target="_blank" rel="noopener noreferrer">Boston Federal Reserve</a> to leverage <a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/newft/oracle-blockchain-table.html#GUID-E98A43F9-871B-4BBF-A96D-832ADC392B38" style={redLinkStyle} target="_blank" rel="noopener noreferrer">Oracle Blockchain Tables</a>. Spent a year researching and developing a system that connected OpenCBDC to Oracle's services and created a frontend to interact with the system.
-        </span>
-      ),
-      color: "red",
+    // "An Oracle sponsored capstone project aimed at adapting the OpenCBDC project by the MIT Digital Currency Initiative and the Boston Federal Reserve to leverage Oracle Blockchain Tables. Spent a year researching and developing a system that connected OpenCBDC to Oracle's services and created a frontend to interact with the system.",
+    descriptionHtml: () => (
+      <span>
+        An <a href="https://www.oracle.com/" style={redLinkStyle} target="_blank" rel="noopener noreferrer">Oracle</a> sponsored capstone project aimed at adapting the <a href="https://dci.mit.edu/project-hamilton-building-a-hypothetical-cbdc" style={redLinkStyle} target="_blank" rel="noopener noreferrer">OpenCBDC project</a> by the <a href="https://dci.mit.edu/" style={redLinkStyle} target="_blank" rel="noopener noreferrer">MIT Digital Currency Initiative</a> and the <a href="https://www.bostonfed.org/" style={redLinkStyle} target="_blank" rel="noopener noreferrer">Boston Federal Reserve</a> to leverage <a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/newft/oracle-blockchain-table.html#GUID-E98A43F9-871B-4BBF-A96D-832ADC392B38" style={redLinkStyle} target="_blank" rel="noopener noreferrer">Oracle Blockchain Tables</a>. Spent a year researching and developing a system that connected OpenCBDC to Oracle's services and created a frontend to interact with the system.
+      </span>
+    ),
+    color: "red",
   },
   {
     text: "Research: Stellar CBDC Hierarchical Consensus",
     url: global_stellar_poster,
     // url: "https://stellar.org/",
     // description:  
-      // "Doing research in Lehigh's Blockchain Labs on using Stellar to create a hierarchical consensus to model a global cross-CBDC payment solution. Currently employing Soroban Smart Contracts to create a proof of concept.",
+    // "Doing research in Lehigh's Blockchain Labs on using Stellar to create a hierarchical consensus to model a global cross-CBDC payment solution. Currently employing Soroban Smart Contracts to create a proof of concept.",
     descriptionHtml: () => (
       <span>
         Doing research in Lehigh's Blockchain Labs on using <a href="https://stellar.org/" style={yellowLinkStyle} target="_blank" rel="noopener noreferrer">Stellar</a> to create a hierarchical consensus to model a global cross-CBDC payment solution. Currently employing <a href="https://soroban.stellar.org/" style={yellowLinkStyle} target="_blank" rel="noopener noreferrer">Soroban Smart Contracts</a> to create a proof of concept.
       </span>
-    ),  
+    ),
     color: "yellow",
   },
 ]
@@ -288,14 +289,44 @@ const IndexPage: React.FC<PageProps> = () => {
 
   // Styles that depend on the theme state must be inside the component
   const mainStyles: React.CSSProperties = {
+    border: 'none',
     display: 'flex',
-    alignItems: 'flex-start', // Align items at the start of the container vertically
+    flexDirection: 'column',
+    alignItems: 'stretch', // Align items at the start of the container vertically
     justifyContent: 'space-between', // Space between items
-    padding: '96px', // Add your desired padding
+    padding: '48px', // Add your desired padding
     fontFamily: '-apple-system, Roboto, sans-serif, serif',
     color: theme === 'dark' ? '#ffffff' : '#232129',
     backgroundColor: theme === 'dark' ? '#232129' : '#ffffff',
+
+    margin: 0, // Remove default margin
+    width: '100vw', // Full width
+    height: '100vh', // Full height
+    overflowX: 'hidden', // Prevent horizontal 
+    boxSizing: 'border-box', // Include padding and border in the element's total width and height
   };
+
+  // Additional responsive styles using media queries
+  const responsiveStyles = `
+    @media (max-width: 768px) {
+      main {
+        padding: 24px; // Further reduce padding for smaller screens
+      }
+      h1 {
+        font-size: 24px; // Adjust heading size for mobile
+        margin-bottom: 32px; // Adjust margin for mobile
+      }
+      p {
+        font-size: 16px; // Adjust paragraph size for mobile
+        margin-bottom: 24px; // Adjust margin for mobile
+      }
+      .buttonContainer {
+        justify-content: center; // Center button on mobile
+        marginTop: 16px; // Ensure there is space above the button
+        padding: 16px 0; // Add padding for mobile
+      }
+    }
+  `;
 
   const projectTitleStyle: React.CSSProperties = {
     fontWeight: 'bold',
@@ -305,13 +336,33 @@ const IndexPage: React.FC<PageProps> = () => {
     color: theme === 'dark' ? '#FFF' : '#232129',
 
   };
-  
+
 
   // Load theme from localStorage on initial render
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "dark";
     setTheme(savedTheme);
     document.documentElement.className = savedTheme;
+
+    // Apply global styles to body and html
+    document.body.style.margin = '0';
+    document.body.style.padding = '0';
+    document.body.style.width = '100vw';
+    document.body.style.height = '100vh';
+    document.body.style.overflow = 'hidden'; // Prevent overflow
+    document.body.style.boxSizing = 'border-box'; // Include padding and border in the element's total width and height
+    document.documentElement.style.margin = '0';
+    document.documentElement.style.padding = '0';
+    document.documentElement.style.width = '100vw';
+    document.documentElement.style.height = '100vh';
+    document.documentElement.style.overflow = 'hidden'; // Prevent overflow
+    document.documentElement.style.boxSizing = 'border-box'; // Include padding and border in the element's total width and height
+
+    // Apply responsive styles to the document
+    const styleSheet = document.createElement("style");
+    styleSheet.type = "text/css";
+    styleSheet.innerText = responsiveStyles;
+    document.head.appendChild(styleSheet);
   }, []);
 
   // Define the button styles within the component so it has access to the `theme` state
@@ -351,9 +402,11 @@ const IndexPage: React.FC<PageProps> = () => {
     backgroundColor: theme === "dark" ? "#8346c1" : "#663399", // Conditional background color
     color: theme === "dark" ? "#FFF" : "#333", // Conditional text color
   };
+
+
   return (
     <main style={mainStyles}>
-      
+
       <div style={textContainerStyles}>
 
         <h1 style={headingStyles}>
@@ -366,6 +419,18 @@ const IndexPage: React.FC<PageProps> = () => {
           <span style={headingAccentStyles}>— Development Operations ⚙️💻🚀</span>
           <br />
         </h1>
+        <div style={buttonContainerStyles} className="buttonContainer">
+          {/* <button
+            style={toggleButtonStyles}
+            onClick={toggleTheme}
+            onMouseEnter={e => Object.assign(e.currentTarget.style, buttonHoverStyles)}
+            onMouseLeave={e => Object.assign(e.currentTarget.style, buttonStyles)}
+            onMouseDown={e => Object.assign(e.currentTarget.style, buttonActiveStyles)}
+            onMouseUp={e => Object.assign(e.currentTarget.style, buttonHoverStyles)}
+          >
+            {theme === "dark" ? "☀️" : "🌙"}
+          </button> */}
+        </div>
         <p style={paragraphStyles}>
           Senior @ <a href="https://www2.lehigh.edu" style={linkStyle} target="_blank" rel="noopener noreferrer">Lehigh University</a> studying Computer Science and Engineering, minor in Economics. <br />
           Researcher in Lehigh's <a href="https://wordpress.lehigh.edu/blockchain/" style={linkStyle} target="_blank" rel="noopener noreferrer">Blockchain Labs</a>. President of the Lehigh Fencing Club🤺.
@@ -377,75 +442,75 @@ const IndexPage: React.FC<PageProps> = () => {
                 style={linkStyle}
                 href={doc.url}
                 target="_blank"
-                rel="noopener noreferrer"                
+                rel="noopener noreferrer"
               >
                 {doc.text}
               </a>
-            </li> 
-          ))}
-        </ul>
-
-      <p style={projectTitleStyle}>
-        Projects: <br />
-        <ul style={listStyles}>
-        {projects.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {link.text}
-                <br />
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              {/* <p style={descriptionStyle}>{link.description}</p> */}
-              {/* <p style={descriptionStyle}>{link.descriptionHtml()}</p> */}
-              {
-                link.description
-                  ? <p style={descriptionStyle}>{link.description}</p>
-                  : <p style={descriptionStyle}>{link.descriptionHtml()}</p>
-              }
-            </span>
-          </li>
-        ))}
-      </ul>
-      </p>
-
-      <p style={projectTitleStyle}>
-        Experience: <br />
-        <ul style={listStyles}>
-          {experience.map(link => (
-            <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-              <span>
-                <a
-                  style={linkStyle}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {link.text}
-                  <br />
-                </a>
-                  {link.badge && (
-                  <span style={badgeStyle} aria-label="New Badge">
-                    NEW!
-                  </span>
-                )}
-                <p style={descriptionStyle}>{link.description}</p>
-              </span>
             </li>
           ))}
         </ul>
-      </p>
 
-      {/* <p style={projectTitleStyle}>
+        <p style={projectTitleStyle}>
+          Projects: <br />
+          <ul style={listStyles}>
+            {projects.map(link => (
+              <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
+                <span>
+                  <a
+                    style={linkStyle}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.text}
+                    <br />
+                  </a>
+                  {link.badge && (
+                    <span style={badgeStyle} aria-label="New Badge">
+                      NEW!
+                    </span>
+                  )}
+                  {/* <p style={descriptionStyle}>{link.description}</p> */}
+                  {/* <p style={descriptionStyle}>{link.descriptionHtml()}</p> */}
+                  {
+                    link.description
+                      ? <p style={descriptionStyle}>{link.description}</p>
+                      : <p style={descriptionStyle}>{link.descriptionHtml()}</p>
+                  }
+                </span>
+              </li>
+            ))}
+          </ul>
+        </p>
+
+        <p style={projectTitleStyle}>
+          Experience: <br />
+          <ul style={listStyles}>
+            {experience.map(link => (
+              <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
+                <span>
+                  <a
+                    style={linkStyle}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.text}
+                    <br />
+                  </a>
+                  {link.badge && (
+                    <span style={badgeStyle} aria-label="New Badge">
+                      NEW!
+                    </span>
+                  )}
+                  <p style={descriptionStyle}>{link.description}</p>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </p>
+
+        {/* <p style={projectTitleStyle}>
         Education: <br />
         P.C. Rossin College of Engineering and Applied Science <br />
         Computer Science and Engineering <br />
@@ -453,27 +518,16 @@ const IndexPage: React.FC<PageProps> = () => {
         Lehigh University, Class of 2024 <br />
         Bethlehem, Pennsylvania.
       </p> */}
-      <div style={logoContainerStyles}>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
-      <span>Website built w/ <a style={linkStyle} href='https://www.gatsbyjs.com/' target="_blank" rel="noopener noreferrer">Gatsby</a> and hosted on <a style={linkStyle} href='https://pages.github.com/' target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</span>
-      </div>
+        <div style={logoContainerStyles}>
+          <img
+            alt="Gatsby G Logo"
+            src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
+          />
+          <span>Website built w/ <a style={linkStyle} href='https://www.gatsbyjs.com/' target="_blank" rel="noopener noreferrer">Gatsby</a> and hosted on <a style={linkStyle} href='https://pages.github.com/' target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</span>
+        </div>
 
       </div>
-      <div style={buttonContainerStyles}>
-        <button
-          style={toggleButtonStyles}
-          onClick={toggleTheme}
-          onMouseEnter={e => Object.assign(e.currentTarget.style, buttonHoverStyles)}
-          onMouseLeave={e => Object.assign(e.currentTarget.style, buttonStyles)}
-          onMouseDown={e => Object.assign(e.currentTarget.style, buttonActiveStyles)}
-          onMouseUp={e => Object.assign(e.currentTarget.style, buttonHoverStyles)}
-        >
-          {theme === "dark" ? "☀️" : "🌙"}
-        </button>
-      </div>
+
 
     </main>
   )
