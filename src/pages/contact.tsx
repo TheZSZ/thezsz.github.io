@@ -29,7 +29,8 @@ const NotFoundPage: React.FC<PageProps> = () => {
       <h1 style={headingStyles}>CONTACT PAGE</h1>
       <p style={paragraphStyles}>
         Reach out to me at <a href="mailto:zeesayedkhan@gmail.com">zeesayedkhan@gmail.com</a> <br />
-        You can find me on <a href="https://www.linkedin.com/in/zeesayedkhan/">LinkedIn</a>
+        You can find me on <a href="https://www.linkedin.com/in/zeesayedkhan/">LinkedIn</a> <br />
+        More to come on this page soon...
 
         <br />
         {process.env.NODE_ENV === "development" ? (
