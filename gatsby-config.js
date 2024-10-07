@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: ``, // This path is subpath of your hosting https://domain/portfolio
   siteMetadata: {
     title: 'Z\'s Site',
-    siteUrl: `https://www.zkhan.dev`, // Adding this to match the TS config
+    siteUrl: `https://www.zkhan.dev`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -12,10 +12,11 @@ module.exports = {
         name: 'Hyperspace',
         short_name: 'starter',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#100000',
+        // theme_color: '#663399',
+        theme_color: '#100000',
         display: 'standalone',
-        icon: 'src/assets/img/website-icon.png', // This path is relative to the root of the site.
+        icon: 'src/assets/img/favicon-32x32.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-sass',

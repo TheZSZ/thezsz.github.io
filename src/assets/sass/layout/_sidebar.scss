@@ -106,7 +106,7 @@
       }
 
       &:before {
-        background: lighten(_palette(bg), 5);
+        background: scale(_palette(bg), -5%);
       }
 
       &:after {

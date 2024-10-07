@@ -41,7 +41,7 @@ const Features = () => {
       description: 'An Oracle sponsored capstone project aimed at adapting the OpenCBDC project by the MIT Digital Currency Initiative and the Boston Federal Reserve to leverage Oracle Blockchain Tables.',
       //  Spent a year researching and developing a system that connected OpenCBDC to Oracle\'s services and created a frontend to interact with the system.
       to: {
-        href: 'https://blogs.oracle.com/blockchain/post/extending-cbdc-scalability-and-resilience-with-oracle-database-blockchain-tables',
+        href: '/capstone',
         label: 'See more',
       },
     },
@@ -52,7 +52,7 @@ const Features = () => {
       description: 'Graduate level research in Lehigh\'s Blockchain Labs on using Stellar to create a hierarchical consensus to model a global cross-CBDC payment solution.',
       // Currently employing Soroban Smart Contracts to create a proof of concept.
       to: {
-        href: '/comingsoon',
+        href: '/research',
         label: 'See more',
       },
     },
