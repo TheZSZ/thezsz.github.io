@@ -6,7 +6,6 @@ import Layout from '../components/common/layout';
 import Footer from '../components/common/Footer';
 import Header from '../components/common/Header';
 
-
 const SecondPage = () => (
   <Layout>
     <Header />
@@ -14,28 +13,26 @@ const SecondPage = () => (
     <div id="wrapper">
       <section id="main" className="wrapper">
         <div className="inner">
-          <h1 className="major">A Generic Page</h1>
+          <h1 className="major">Hackathon: Civic Seed</h1>
+          <p>
+            An Amazon and Lutron sponser hackathon at Lehigh University and
+            Lafayette College that focused on uniting the Lehigh Valley. Civic
+            Seed is a platform designed to empower local communities in the
+            Lehigh Valley by fostering collaboration between residents,
+            businesses, and municipal representatives. Utilizing a MERN stack,
+            our team developed key features including project proposal
+            submission, community voting, and real-time funding tracking. We
+            integrated Amazon DocumentDB for efficient data handling and
+            deployed the application using AWS Elastic Container Registry and
+            EC2. The platform facilitates civic engagement by allowing users to
+            propose ideas, vote, and track project funding, aiming to cultivate
+            meaningful community-driven change.
+          </p>
+          <p>Image coming soon...</p>
           <span className="image fit">
             <img src={pic4} alt="" />
           </span>
-          <p>
-            Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
-            primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
-            mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor
-            sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet,
-            fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit.
-            Donec urna ex, lacinia in purus ac, pretium pulvinar mauris.
-            Curabitur sapien risus, commodo eget turpis at, elementum convallis
-            elit. Pellentesque enim turpis, hendrerit tristique.
-          </p>
-          <p>
-            Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
-            Praesent rutrum sem diam, vitae egestas enim auctor sit amet.
-            Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien
-            risus, commodo eget turpis at, elementum convallis elit.
-            Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
-          </p>
+
         </div>
       </section>
     </div>

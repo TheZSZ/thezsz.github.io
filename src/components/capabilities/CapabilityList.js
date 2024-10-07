@@ -7,12 +7,12 @@ const CapabilityList = () => {
     {
       heading: 'Smart Contract Developer @ Metaiye Media - July 2024 - Present',
       description: 'Smart Contract Developer at Metaiye Media, developing iQubes layerless blockchain protocol and leading LayerZero integrations.',
-      iconClass: 'fa-code',
+      iconClass: 'fa-chain',
     },
     {
       heading: 'Engineering Intern @ Authentic8 - Summer 2023',
       description: 'Worked in-person in the Research Engineering Team to research and develop new tools and features for the Silo Browser.',
-      iconClass: 'fa-lock',
+      iconClass: 'fa-code',
     },
     {
       heading: 'A8Labs Intern @ Authentic8 - December 2022 - March 2023',
@@ -22,7 +22,7 @@ const CapabilityList = () => {
     {
       heading: 'Lehigh Computer Science Grader - August 2022 - December 2023',
       description: 'Grader for Software Engineering Lifecycle course at Lehigh University, CSE216. Mentoring students with their group projects through the semester.',
-      iconClass: 'fa-cog',
+      iconClass: 'fa-diamond',
     },
     {
       heading: 'A8Labs Intern @ Authentic8 - Summer 2022',

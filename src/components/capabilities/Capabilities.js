@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 
 import CapabilityList from './CapabilityList';
 
 const Capabilities = () =>
   <section id="two" className="wrapper style3 fade-up">
     <div className="inner">
-      <h2>Experiences</h2>
-      <p>
+      <h2>Experiences</h2> <br />
+      {/* <p>
         Work Experiences outside of University
-      </p>
+      </p> */}
       <div className="features">
         <CapabilityList />
       </div>
