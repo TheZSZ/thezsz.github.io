@@ -1,6 +1,7 @@
 import React from 'react';
 
 import posterfair from '../images/researchposterfair.jpeg';
+import posterpng from '../images/Global_Stellar_CBDC_Consensus_Poster.png';
 import poster from '../images/Global_Stellar_CBDC_Consensus_Poster.pdf';
 import Layout from '../components/common/layout';
 import Footer from '../components/common/Footer';
@@ -17,7 +18,7 @@ const SecondPage = () => (
             Research: Stellar CBDC Hierarchical Consensus
           </h1>
           <p>
-            The Hierarchical Consensus project, advised by Professor Hank Korth,
+            &emsp;The Hierarchical Consensus project, advised by Professor Hank Korth,
             explores an approach to achieving consensus across multiple
             interconnected networks, building on the Stellar Consensus Protocol
             (SCP) and adapting it to a hierarchical, multi-network environment.
@@ -30,7 +31,7 @@ const SecondPage = () => (
             testnets, ensuring cross-network communication, and leveraging
             Stellar’s smart contract platform, Soroban, for contract deployment
             and interaction. <br /> <br />
-            Throughout the project, we have developed smart contracts using
+            &emsp;Throughout the project, we have developed smart contracts using
             Stellar's Soroban to support persistent storage and cross-network
             interactions. A major focus is on creating a decentralized
             identifier (DID) registry using Soroban, which ensures unique
@@ -76,7 +77,10 @@ const SecondPage = () => (
             </div>
           </p>
           <h2>Research Poster</h2>
-          <div className="pdf-container image fit">
+          <span className="image fit">
+            <img src={posterpng} alt="" />
+          </span>
+          {/* <div className="pdf-container image fit">
             <embed
               src={poster}
               type="application/pdf"
@@ -84,7 +88,7 @@ const SecondPage = () => (
               height="910px"
               style={{ border: 'none' }}
             />
-          </div>
+          </div> */}
           <h2>
             Team Photo at Lehigh I-DISC Poster Session (Building C, Lehigh
             University)

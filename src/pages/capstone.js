@@ -1,6 +1,7 @@
 import React from 'react';
 
 import posterfair from '../images/cbdcposterfair.jpg';
+import posterpng from '../images/Oracle_CBDC_Poster.png';
 import poster from '../images/Oracle_CBDC_Poster.pdf';
 
 import Layout from '../components/common/layout';
@@ -18,7 +19,7 @@ const SecondPage = () => (
             Capstone: Adapting OpenCBDC to Leverage Oracle Blockchain Tables
           </h1>
           <p>
-            Team member in an Oracle-sponsored capstone project focused on
+            &emsp;Team member in an Oracle-sponsored capstone project focused on
             enhancing the OpenCBDC project from MITs Digital Currency Initiative
             and the Boston Federal Reserve. Our goal was to adapt the OpenCBDC
             platform to leverage Oracle's Blockchain Tables and Autonomous
@@ -29,7 +30,7 @@ const SecondPage = () => (
             Cloud Infrastructure (OCI), Oracle Database Sharding, and Blockchain
             Tables to enhance the scalability, auditability, and security of
             OpenCBDC. <br /> <br />
-            In this project, I contributed to building a front-end application
+            &emsp;In this project, I contributed to building a front-end application
             for users to interact with the system, allowing them to manage
             wallets, process transactions, and visualize key metrics such as
             total users and transaction volume. I also worked on the backend,
@@ -74,7 +75,10 @@ const SecondPage = () => (
             </div>
           </p>
           <h2>Capstone Poster</h2>
-          <div className="pdf-container image fit">
+          <span className="image fit">
+            <img src={posterpng} alt="" />
+          </span>
+          {/* <div className="pdf-container image fit">
             <embed
               src={poster}
               type="application/pdf"
@@ -82,7 +86,7 @@ const SecondPage = () => (
               height="800px"
               style={{ border: 'none' }}
             />
-          </div>
+          </div> */}
           <h2>
             Team Photo at Capstone Presentation (Building C, Lehigh University)
           </h2>
