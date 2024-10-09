@@ -5,6 +5,7 @@ import pic4 from '../images/soilsense.jpeg';
 import Layout from '../components/common/layout';
 import Footer from '../components/common/Footer';
 import Header from '../components/common/Header';
+import { Link } from 'gatsby';
 
 const SecondPage = () => (
   <Layout>
@@ -15,23 +16,23 @@ const SecondPage = () => (
         <div className="inner">
           <h1 className="major">Hackathon: Soil Sense</h1>
           <p>
-            &emsp;A Google sponsored hackathon "Hack for Change" at Lehigh University
-            that focused on designing and developing an innovative
+            &emsp;A Google sponsored hackathon "Hack for Change" at Lehigh
+            University that focused on designing and developing an innovative
             technology-driven solution to address key challenges within the
             realm of climate change, specifically targeting sustainability,
             ocean conservation, and disaster management. <br /> <br />
-            &emsp;Our solution aimed at addressing soil contamination due to high
-            phosphate levels, which pose a significant threat to agriculture and
-            water ecosystems. Our proposed web application utilizes Google Cloud
-            Platform's App Engine, integrating Google Maps API and Python's
-            visualization tools like Matplotlib to monitor phosphate levels in
-            soil. This application provides real-time data to farmers, enabling
-            them to make informed decisions on fertilizer use, helping prevent
-            soil degradation and eutrophication in nearby water bodies. By
-            monitoring and visualizing phosphate contamination, the tool
-            supports sustainable farming practices, enhancing crop yield while
-            mitigating environmental harm.
-            Award: Most Likely to Recieve Venture Capital Funding. <br /> <br />
+            &emsp;Our solution aimed at addressing soil contamination due to
+            high phosphate levels, which pose a significant threat to
+            agriculture and water ecosystems. Our proposed web application
+            utilizes Google Cloud Platform's App Engine, integrating Google Maps
+            API and Python's visualization tools like Matplotlib to monitor
+            phosphate levels in soil. This application provides real-time data
+            to farmers, enabling them to make informed decisions on fertilizer
+            use, helping prevent soil degradation and eutrophication in nearby
+            water bodies. By monitoring and visualizing phosphate contamination,
+            the tool supports sustainable farming practices, enhancing crop
+            yield while mitigating environmental harm. Award: Most Likely to
+            Recieve Venture Capital Funding. <br /> <br />
             <div
               style={{
                 position: 'relative',
@@ -84,6 +85,17 @@ const SecondPage = () => (
           </p> */}
         </div>
       </section>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <Link to="/" className="button primary">
+          Go to the home page
+        </Link>
+      </div>
     </div>
 
     <Footer />

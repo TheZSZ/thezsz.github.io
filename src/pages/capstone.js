@@ -7,6 +7,7 @@ import poster from '../images/Oracle_CBDC_Poster.pdf';
 import Layout from '../components/common/layout';
 import Footer from '../components/common/Footer';
 import Header from '../components/common/Header';
+import { Link } from 'gatsby';
 
 const SecondPage = () => (
   <Layout>
@@ -98,6 +99,17 @@ const SecondPage = () => (
           </h4>
         </div>
       </section>
+      <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <Link to="/" className="button primary">
+              Go to the home page
+            </Link>
+          </div>
     </div>
 
     <Footer />

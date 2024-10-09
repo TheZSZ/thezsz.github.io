@@ -1,10 +1,12 @@
 import React from 'react';
 
-import pic4 from '../images/pic04.jpg';
+import civicseedimg from '../images/civicseedimg.jpg';
 
 import Layout from '../components/common/layout';
 import Footer from '../components/common/Footer';
 import Header from '../components/common/Header';
+import { Link } from 'gatsby';
+
 
 const SecondPage = () => (
   <Layout>
@@ -14,11 +16,28 @@ const SecondPage = () => (
       <section id="main" className="wrapper">
         <div className="inner">
           <h1 className="major">Hackathon: Civic Seed</h1>
+          {/* <div
+            style={{
+              display: 'flex',
+              justifyContent: 'right',
+              alignItems: 'right',
+            }}
+          >
+            <a
+              href="/"
+              className="button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Go to the home page
+            </a>
+          </div>
+          <br /> */}
           <p>
-            &emsp;An Amazon and Lutron sponser hackathon at Lehigh University and
-            Lafayette College that focused on uniting the Lehigh Valley. Civic
-            Seed is a platform designed to empower local communities in the
-            Lehigh Valley by fostering collaboration between residents,
+            &emsp;An Amazon and Lutron sponser hackathon at Lehigh University
+            and Lafayette College that focused on uniting the Lehigh Valley.
+            Civic Seed is a platform designed to empower local communities in
+            the Lehigh Valley by fostering collaboration between residents,
             businesses, and municipal representatives. Utilizing a MERN stack,
             our team developed key features including project proposal
             submission, community voting, and real-time funding tracking. We
@@ -27,7 +46,6 @@ const SecondPage = () => (
             EC2. The platform facilitates civic engagement by allowing users to
             propose ideas, vote, and track project funding, aiming to cultivate
             meaningful community-driven change. <br /> <br />
-
             <div
               style={{
                 position: 'relative',
@@ -62,11 +80,29 @@ const SecondPage = () => (
               </a>
             </div>
           </p>
-          <p>Image coming soon...</p>
+          <br />
+          <br />
+          <p>
+            Unfortunatly this is the only image I have from this hackathon :/{' '}
+          </p>
           <span className="image fit">
-            <img src={pic4} alt="" />
+            <img src={civicseedimg} alt="" />
           </span>
-
+          <p>
+            This was the whiteboard drawing of our Amazon DocumentDB Database,
+            and our upvotes and downvotes would be called Bloom / Wither!{' '}
+          </p>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <Link to="/" className="button primary">
+              Go to the home page
+            </Link>
+          </div>
         </div>
       </section>
     </div>
