@@ -1,12 +1,9 @@
 import React from 'react';
 
-import pic1 from '../../images/pic01.jpg';
-import pic2 from '../../images/pic02.jpg';
-import pic3 from '../../images/pic03.jpg';
 import hackforchange from '../../images/hackforchange.png';
 import rivalry from '../../images/rivalry.png';
 import opencbdc from '../../images/opencbdc.png';
-import sss from '../../images/sss.jpg';
+import soroban from '../../images/soroban.jpg';
 
 import Feature from './Feature';
 
@@ -47,9 +44,9 @@ const Features = () => {
     },
     {
       href: '/#',
-      image: sss,
+      image: soroban,
       heading: 'Research: Stellar CBDC Hierarchical Consensus',
-      description: 'Graduate level research in Lehigh\'s Blockchain Labs on using Stellar to create a hierarchical consensus to model a global cross-CBDC payment solution.',
+      description: 'Graduate level research in Lehigh\'s Blockchain Labs on using Stellar\'s Soroban to create a hierarchical consensus to model a global cross-CBDC payment solution.',
       // Currently employing Soroban Smart Contracts to create a proof of concept.
       to: {
         href: '/research',

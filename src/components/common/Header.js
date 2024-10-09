@@ -1,16 +1,16 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 
 import '../../assets/sass/main.scss';
 
 const Header = () => (
   <header id="header">
-    <Link className="title" to="/">
+    {/* <Link className="title" to="/">
       zkhan.dev/
-    </Link>
-    <nav>
+    </Link> */}
+    {/* <nav>
       <ul>
-        {/* <li>
+        <li>
           <Link to="/">Home</Link>
         </li>
         <li>
@@ -18,9 +18,9 @@ const Header = () => (
         </li>
         <li>
           <Link to="/elements">Elements</Link>
-        </li> */}
+        </li>
       </ul>
-    </nav>
+    </nav> */}
   </header>
 );
 

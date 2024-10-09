@@ -12,7 +12,6 @@ const Introduction = () =>
       <p>
         Computer Science and Engineering graduate from Lehigh University, minor in Economics.
         Former Lehigh Blockchain Labs member. Past president of the Lehigh Fencing Club🤺.
-        Smart Contracts Developer at Metaiye Media.
       </p>
 
       <ul className="actions">
