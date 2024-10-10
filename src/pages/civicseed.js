@@ -83,7 +83,7 @@ const SecondPage = () => (
           <br />
           <br />
           <p>
-            Unfortunatly this is the only image I have from this hackathon :/{' '}
+            Unfortunately this is the only image I have from this hackathon :/{' '}
           </p>
           <span className="image fit">
             <img src={civicseedimg} alt="" />
